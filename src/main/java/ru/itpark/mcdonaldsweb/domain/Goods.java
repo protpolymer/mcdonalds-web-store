@@ -13,4 +13,5 @@ public class Goods {
     private String description;
     private int price;
     private String imageLink;
+    private String imageLinkView;
 }

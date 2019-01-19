@@ -21,27 +21,29 @@ public class GoodsRepository {
 
     public List<Goods> getAll() {
         return jdbcTemplate.query(
-                "SELECT id, name, description, price, imageLink FROM goods",
+                "SELECT id, name, description, price, imageLink, imageLinkView FROM goods",
                 (rs, i) -> new Goods(
                         rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
                         rs.getInt("price"),
-                        rs.getString("imageLink")
+                        rs.getString("imageLink"),
+                        rs.getString("imageLinkView")
                 )
         );
     }
 
     public Goods getById(int id) {
         return jdbcTemplate.queryForObject(
-                "SELECT id, name, description, price, imageLink FROM goods WHERE id = :id",
+                "SELECT id, name, description, price, imageLink, imageLinkView FROM goods WHERE id = :id",
                 Map.of("id", id),
                 (rs, i) -> new Goods(
                         rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
                         rs.getInt("price"),
-                        rs.getString("imageLink")
+                        rs.getString("imageLink"),
+                        rs.getString("imageLinkView")
                 )
         );
     }
