@@ -26,7 +26,7 @@ public class GoodsRepository {
                         rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
-                        rs.getInt("price"),
+                        rs.getString("price"),
                         rs.getString("imageLink"),
                         rs.getString("imageLinkView")
                 )
@@ -41,7 +41,7 @@ public class GoodsRepository {
                         rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
-                        rs.getInt("price"),
+                        rs.getString("price"),
                         rs.getString("imageLink"),
                         rs.getString("imageLinkView")
                 )

@@ -11,7 +11,7 @@ public class Goods {
     private int id;
     private String name;
     private String description;
-    private int price;
+    private String price;
     private String imageLink;
     private String imageLinkView;
 }

@@ -2,7 +2,7 @@ CREATE TABLE goods(
 id INTEGER PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(255) NOT NULL,
 description TEXT NOT NULL,
-price INTEGER,
+price TEXT NOT NUll,
 imageLink TEXT NOT NULL,
 imageLinkView TEXT NOT NULL
 );
