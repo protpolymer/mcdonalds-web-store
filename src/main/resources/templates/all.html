@@ -8,7 +8,7 @@
             <div data-th-each="item : ${items}">
                 <h4>[[${item.name}]]</h4>
                 <a data-th-href="@{/items/{id}(id=${item.id})}">
-                    <img data-th-src="@{item.imageLink}" alt=[[${item.name}]]>
+                    <img data-th-src="${item.imageLink}" alt="${item.name}">
                 </a>
             </div>
         </div>
